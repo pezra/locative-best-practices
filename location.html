@@ -25,6 +25,8 @@
 <link rel="stylesheet" href="ui/bkite/outline.css" type="text/css" media="screen" id="outlineStyle" />
 <link rel="stylesheet" href="ui/bkite/print.css" type="text/css" media="print" id="slidePrint" />
 <link rel="stylesheet" href="ui/bkite/opera.css" type="text/css" media="projection" id="operaFix" />
+<!-- S5 JS -->
+<script src="ui/bkite/slides.js" type="text/javascript"></script>
 <!-- embedded styles -->
 <style type="text/css" media="all">
 .imgcon {width: 100%; margin: 0 auto; padding: 0; text-align: center;}
@@ -34,10 +36,10 @@
 .sp {text-align: center; font-size: 300%; }
 .sp:before { content: '\a' ; white-space: pre; }
 .slide h2 {font-size: 250%; line-height: 1.2em;}
-.section-start {color: #000; font-size: 110%;}
+.sections {color: #888888;}
+.current-section {color: #000;}
 </style>
-<!-- S5 JS -->
-<script src="ui/bkite/slides.js" type="text/javascript"></script>
+
 </head>
 <body>
 
@@ -61,23 +63,23 @@
 
   <li class="slide">
     <h2>
-      <ul>
-        <li class="section-start">location != place</li>
-        <li>placing ones self must be easy</li>
-        <li>privacy!</li>
+      <ul class="sections">
+        <li class="section current-section">location != place</li>
+        <li>easy placement</li>
+        <li>privacy</li>
       </ul>
     </h2>
   </li>
 
 	<li class="slide">
-    <h2 class="sp">People get places</h2>
+    <h2 class="sp">people get places</h2>
   </li>
   
 	<li class="slide">
     <h2>
       <ul>
         <li>home</li>
-        <li>WDN 2009</li>
+        <li>Web Directions North 2009</li>
         <li>Denver</li>
       </ul>
     </h2>
@@ -116,7 +118,7 @@
   </li>  
 
 	<li class="slide">
-    <h2 class="sp">Brightkite HQ</h2>
+    <h2 class="sp">brightkite hq</h2>
   </li>
 
 	<li class="slide">
@@ -125,10 +127,6 @@
 
 	<li class="slide">
     <h2 class="sp">which is in Colorado</h2>
-  </li>
-
-	<li class="slide">
-    <h2 class="sp">people get this implicitly</h2>
   </li>
 
   <li class="slide">
@@ -147,35 +145,26 @@
     <h2 class="sp">changes over time</h2>
   </li>
 
+  <li class="slide">
+    <h2 class="sp">place is harder than location</h2>
+  </li>
+
+  <li class="slide">
+    <h2 class="sp">but way more useful</h2>
+  </li>
+
+
+
+
 
   <li class="slide">
     <h2>
-      <ul>
+      <ul class="sections">
         <li>location != place</li>
-        <li class="section-start">placing ones self must be easy</li>
+        <li class="current-section">easy placement</li>
         <li>privacy!</li>
       </ul>
     </h2>
-  </li>
-
-
-	<li class="slide">
-    <h2 class="sp">geocoders expose the ambiguity</h2>
-  </li>
-
-  <li class="slide">
-    <h2>Denver, CO</h2>
-    <h3>
-    <ul>
-      <li>Google:   39.755,-104.988</li>
-      <li>Yahoo!:   39.740,-104.992</li>
-      <li>Geonames: 39.755,-104.988</li>
-    </ul>
-    </h3>
-  </li>
-
-  <li class="slide">
-    <h2 class="sp">still, people like places</h2>
   </li>
 
   <li class="slide">
@@ -236,10 +225,28 @@
     <h2 class="sp">lower user effort</h2>
   </li>
 
-
   <li class="slide">
     <h2 class="sp">reverse geocoding</h2>
   </li>
+
+	<li class="slide">
+    <h2 class="sp">sux</h2>
+  </li>
+
+  <li class="slide">
+    <h2>Denver, CO</h2>
+    <h3>
+    <ul>
+      <li>Google:   39.755,-104.988</li>
+      <li>Yahoo!:   39.740,-104.992</li>
+      <li>Geonames: 39.755,-104.988</li>
+    </ul>
+    </h3>
+  </li>
+  
+  <li class="slide">
+    <h2 class="sp">don't forget: places change over time</h2>
+  </li>  
 
   <li class="slide">
     <h2 class="sp">detected location is inaccurate</h2>
@@ -250,11 +257,15 @@
   </li>
 
   <li class="slide">
-    <h2 class="sp">people are predictable</h2>
+    <h2 class="sp">fortunately, people are predictable</h2>
   </li>
 
   <li class="slide">
-    <h2 class="sp">place snapping</h2>
+    <h2 class="sp">prefer places the user has been before</h2>
+  </li>
+
+  <li class="slide">
+    <h2 class="sp">prefer places lots of other people go</h2>
   </li>
 
   <li class="slide">
@@ -265,20 +276,35 @@
     <h2 class="sp">let them "join" others</h2>
   </li>
 
+
+  <li class="slide">
+    <h2>
+      <ul class="sections">
+        <li>location != place</li>
+        <li>easy placement</li>
+        <li class="current-section">privacy!</li>
+      </ul>
+    </h2>
+  </li>
+
   <li class="slide">
     <h2 class="sp">location is sensitive</h2>
   </li>
 
   <li class="slide">
-    <h2 class="sp">privacy is about trust</h2>
+    <h2 class="sp">it's all about trust</h2>
   </li>
 
   <li class="slide">
-    <h2 class="sp">strangers are not trusted</h2>
+    <h2 class="sp">and risk tolerance</h2>
   </li>
 
   <li class="slide">
-    <h2 class="sp">risk tolerance varies</h2>
+    <h2 class="sp">assume a lack of trusted</h2>
+  </li>
+
+  <li class="slide">
+    <h2 class="sp">unless told otherwise</h2>
   </li>
 
   <li class="slide">
@@ -302,11 +328,11 @@
   </li>
 
   <li class="slide">
-    <h2 class="sp">precise for trusted</h2>
+    <h2 class="sp">precise locations when there is trust</h2>
   </li>
 
   <li class="slide">
-    <h2 class="sp">imprecise but accurate for untrusted</h2>
+    <h2 class="sp">otherwise imprecise, but accurate, locations</h2>
   </li>
 
   <li class="slide">
@@ -329,7 +355,6 @@
     <h2 class="sp">Questions?</h2>
   </li>
   
-
 </ol>
 </body>
 </html>
