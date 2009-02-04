@@ -1,0 +1,304 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Location Best Practices</title>
+<!-- metadata -->
+<meta name="generator" content="S5" />
+<meta name="version" content="S5 1.3" />
+<meta name="author" content="Peter Williams" />
+<meta name="company" content="Brightkite" />
+<!-- meta extensions -->
+<!-- <meta name="subject" content="Location Best Practices" />
+<meta name="robots" content="index, follow" /> -->
+<!-- meta temporary -->
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<!-- configuration parameters -->
+<meta name="defaultView" content="slideshow" />
+<meta name="controlVis" content="hidden" />
+<!-- configuration extensions -->
+<!-- <meta name="tranSitions" content="true" />
+<meta name="fadeDuration" content="500" />
+<meta name="incrDuration" content="250" /> -->
+<link rel="stylesheet" href="ui/default/slides.css" type="text/css" media="projection" id="slideProj" />
+<link rel="stylesheet" href="ui/default/outline.css" type="text/css" media="screen" id="outlineStyle" />
+<link rel="stylesheet" href="ui/default/print.css" type="text/css" media="print" id="slidePrint" />
+<link rel="stylesheet" href="ui/default/opera.css" type="text/css" media="projection" id="operaFix" />
+<!-- S5 JS -->
+<script src="ui/default/slides.js" type="text/javascript"></script>
+<!-- embedded styles -->
+<style type="text/css" media="all">
+.imgcon {width: 100%; margin: 0 auto; padding: 0; text-align: center;}
+#anim {width: 33%; height: 320px; position: relative;}
+#anim img {position: absolute; top: 0px; left: 0px;}
+.logo {margin: 0.2em 0 0 0.15em; padding: 0;}
+.sp {text-align: center; font-size: 300%; }
+.sp:before { content: '\a' ; white-space: pre; }
+.slide h2 {font-size: 250%; line-height: 1.2em;}
+</style>
+<!-- S5 JS -->
+<script src="ui/default/slides.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div class="layout">
+  <div id="controls"><!-- DO NOT EDIT --></div>
+  <div id="currentSlide"><!-- DO NOT EDIT --></div>
+  <div id="header">
+  </div>
+  <div id="footer">
+    <h1>Location best practices</h1>
+    <h2>Brightkite</h2>
+  </div>
+</div>
+
+<ol class="presentation xoxo">
+	<li class="slide">
+    <h1>Location-base applications:<br/>Best practices</h1>
+    <h2>Peter Williams</h2>
+    <h4><a href="http://brightkite.com/people/pezra">@pezra</a></h4>
+  </li>
+
+	<li class="slide">
+    <h2 class="sp">People get places</h2>
+  </li>
+  
+	<li class="slide">
+    <h2>
+      <ul>
+        <li>home</li>
+        <li>WDN 2009</li>
+        <li>Denver</li>
+      </ul>
+    </h2>
+  </li>
+
+	<li class="slide">
+    <h2 class="sp">place is complicated</h2>
+  </li>
+
+	<li class="slide">
+    <h2 class="sp">Dazbog Coffee<br/>1099 18th St</h2>
+  </li>
+
+	<li class="slide">
+    <h2 class="sp">Anadarko Petroleum<br/>1099 18th St</h2>
+  </li>
+
+	<li class="slide">
+    <h2 class="sp">same lat/long</h2>
+  </li>
+
+	<li class="slide">
+    <h2 class="sp"><strong>different</strong> places</h2>
+  </li>
+
+	<li class="slide">
+    <h2 class="sp">Brightkite HQ</h2>
+  </li>
+
+	<li class="slide">
+    <h2 class="sp">is in Denver</h2>
+  </li>
+
+	<li class="slide">
+    <h2 class="sp">which is in Colorado</h2>
+  </li>
+
+	<li class="slide">
+    <h2 class="sp">people get this implicitly</h2>
+  </li>
+
+	<li class="slide">
+    <h2 class="sp">where is Denver?</h2>
+  </li>
+
+	<li class="slide">
+    <h2 class="sp">"I know it when I see it"</h2>
+  </li>
+
+  <li class="slide">
+    <h2 class="sp">changes over time</h2>
+  </li>
+
+	<li class="slide">
+    <h2 class="sp">geocoders expose the ambiguity</h2>
+  </li>
+
+  <li class="slide">
+    <h2>Denver, CO</h2>
+    <h3>
+    <ul>
+      <li>Google:   39.755,-104.988</li>
+      <li>Yahoo!:   39.740,-104.992</li>
+      <li>Geonames: 39.755,-104.988</li>
+    </ul>
+    </h3>
+  </li>
+
+  <li class="slide">
+    <h2 class="sp">still, people like places</h2>
+  </li>
+
+  <li class="slide">
+    <h2 class="sp">search</h2>
+  </li>
+
+  <li class="slide">
+    <h2 class="sp">make the heavy lifting someone else's problem</h2>
+  </li>
+
+  <li class="slide">
+    <h2 class="sp">like geocoding, only smarter</h2>
+  </li>
+  
+  <li class="slide">
+    <h2 class="sp">"the celtic denver"</h2>
+  </li>
+
+  <li class="slide">
+    <h2 class="sp">place names for free</h2>
+  </li>
+
+  <li class="slide">
+    <h2 class="sp">manual process</h2>
+  </li>
+
+  <li class="slide">
+    <h2 class="sp">location aware devices</h2>
+  </li>
+
+  <li class="slide">
+    <h2 class="sp">browsers have the <a href="http://dev.w3.org/geo/api/spec-source.html">Geolocation API</a></h2>
+  </li>
+
+  <li class="slide">
+    <h2 class="sp">and <a href="http://www.loki.com/">Loki</a></h2>
+  </li>
+
+  <li class="slide">
+    <h2 class="sp">except for mobile browsers</h2>
+  </li>
+
+  <li class="slide">
+    <h2 class="sp">location aware devices</h2>
+    <h3>
+      <ul>
+        <li>smart phones</li>
+        <li>GPS devices</li>
+      </ul>
+    </h3>
+  </li>
+
+  <li class="slide">
+    <h2 class="sp">incompatible APIs</h2>
+  </li>
+
+  <li class="slide">
+    <h2 class="sp">lower user effort</h2>
+  </li>
+
+  <li class="slide">
+    <h2 class="sp">where is 39.709,-105.073 anyway?</h2>
+  </li>
+
+  <li class="slide">
+    <h2 class="sp">reverse geocoding</h2>
+  </li>
+
+  <li class="slide">
+    <h2 class="sp">detected location is inaccurate</h2>
+  </li>
+
+  <li class="slide">
+    <h2 class="sp">places overlap</h2>
+  </li>
+
+  <li class="slide">
+    <h2 class="sp">people are predictable</h2>
+  </li>
+
+  <li class="slide">
+    <h2 class="sp">place snapping</h2>
+  </li>
+
+  <li class="slide">
+    <h2 class="sp">people are social</h2>
+  </li>
+
+  <li class="slide">
+    <h2 class="sp">joining</h2>
+  </li>
+
+  <li class="slide">
+    <h2 class="sp">location is sensitive</h2>
+  </li>
+
+  <li class="slide">
+    <h2 class="sp">privacy is about trust</h2>
+  </li>
+
+  <li class="slide">
+    <h2 class="sp">strangers are not trusted</h2>
+  </li>
+
+  <li class="slide">
+    <h2 class="sp">risk tolerance varies</h2>
+  </li>
+
+  <li class="slide">
+    <h2 class="sp">my exact location is public</h2>
+  </li>
+
+  <li class="slide">
+    <h2 class="sp">my wife's is not</h2>
+  </li>
+
+  <li class="slide">
+    <h2 class="sp">my home address is off limits</h2>
+  </li>
+
+  <li class="slide">
+    <h2 class="sp">my home city is not</h2>
+  </li>
+
+  <li class="slide">
+    <h2 class="sp">i live in Broomfield, btw</h2>
+  </li>
+
+  <li class="slide">
+    <h2 class="sp">precise for trusted</h2>
+  </li>
+
+  <li class="slide">
+    <h2 class="sp">imprecise but accurate for untrusted</h2>
+  </li>
+
+  <li class="slide">
+    <h2 class="sp">ambiguity is a feature</h2>
+  </li>
+
+  <li class="slide">
+    <h2 class="sp">allow deceit</h2>
+  </li>
+
+  <li class="slide">
+    <h2 class="sp">sometimes even people i trust shouldn't know i am at Tiffany & Co</h2>
+  </li>
+
+  <li class="slide">
+    <h2 class="sp">but don't encourage it</h2>
+  </li>
+
+  <li class="slide">
+    <h2 class="sp">Questions?</h2>
+  </li>
+  
+
+</ol>
+</body>
+</html>
