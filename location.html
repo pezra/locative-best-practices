@@ -20,10 +20,7 @@
 <!-- configuration parameters -->
 <meta name="defaultView" content="slideshow" />
 <meta name="controlVis" content="hidden" />
-<!-- configuration extensions -->
-<!-- <meta name="tranSitions" content="true" />
-<meta name="fadeDuration" content="500" />
-<meta name="incrDuration" content="250" /> -->
+
 <link rel="stylesheet" href="ui/bkite/slides.css" type="text/css" media="projection" id="slideProj" />
 <link rel="stylesheet" href="ui/bkite/outline.css" type="text/css" media="screen" id="outlineStyle" />
 <link rel="stylesheet" href="ui/bkite/print.css" type="text/css" media="print" id="slidePrint" />
@@ -37,6 +34,7 @@
 .sp {text-align: center; font-size: 300%; }
 .sp:before { content: '\a' ; white-space: pre; }
 .slide h2 {font-size: 250%; line-height: 1.2em;}
+.section-start {color: #000; font-size: 110%;}
 </style>
 <!-- S5 JS -->
 <script src="ui/bkite/slides.js" type="text/javascript"></script>
@@ -61,6 +59,16 @@
     <h4><a href="http://brightkite.com/people/pezra">@pezra</a></h4>
   </li>
 
+  <li class="slide">
+    <h2>
+      <ul>
+        <li class="section-start">location != place</li>
+        <li>placing ones self must be easy</li>
+        <li>privacy!</li>
+      </ul>
+    </h2>
+  </li>
+
 	<li class="slide">
     <h2 class="sp">People get places</h2>
   </li>
@@ -76,7 +84,15 @@
   </li>
 
 	<li class="slide">
-    <h2 class="sp">place is complicated</h2>
+    <h2 class="sp">not location</h2>
+  </li>
+
+  <li class="slide">
+    <h2 class="sp">do i care about 39.709,-105.073?</h2>
+  </li>
+
+  <li class="slide">
+    <h2 class="sp">places have names</h2>
   </li>
 
 	<li class="slide">
@@ -88,12 +104,16 @@
   </li>
 
 	<li class="slide">
-    <h2 class="sp">same lat/long</h2>
+    <h2 class="sp">same lat/long (location)</h2>
   </li>
 
 	<li class="slide">
     <h2 class="sp"><strong>different</strong> places</h2>
   </li>
+
+	<li class="slide">
+    <h2 class="sp">places overlap (and have extents)</h2>
+  </li>  
 
 	<li class="slide">
     <h2 class="sp">Brightkite HQ</h2>
@@ -111,6 +131,10 @@
     <h2 class="sp">people get this implicitly</h2>
   </li>
 
+  <li class="slide">
+    <h2 class="sp">places are fuzzy</h2>
+  </li>
+
 	<li class="slide">
     <h2 class="sp">where is Denver?</h2>
   </li>
@@ -122,6 +146,18 @@
   <li class="slide">
     <h2 class="sp">changes over time</h2>
   </li>
+
+
+  <li class="slide">
+    <h2>
+      <ul>
+        <li>location != place</li>
+        <li class="section-start">placing ones self must be easy</li>
+        <li>privacy!</li>
+      </ul>
+    </h2>
+  </li>
+
 
 	<li class="slide">
     <h2 class="sp">geocoders expose the ambiguity</h2>
@@ -200,9 +236,6 @@
     <h2 class="sp">lower user effort</h2>
   </li>
 
-  <li class="slide">
-    <h2 class="sp">where is 39.709,-105.073 anyway?</h2>
-  </li>
 
   <li class="slide">
     <h2 class="sp">reverse geocoding</h2>
