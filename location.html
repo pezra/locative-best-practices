@@ -29,13 +29,8 @@
 <script src="ui/bkite/slides.js" type="text/javascript"></script>
 <!-- embedded styles -->
 <style type="text/css" media="all">
-.imgcon {width: 100%; margin: 0 auto; padding: 0; text-align: center;}
-#anim {width: 33%; height: 320px; position: relative;}
-#anim img {position: absolute; top: 0px; left: 0px;}
-.logo {margin: 0.2em 0 0 0.15em; padding: 0;}
 .sp {text-align: center; font-size: 300%; }
 .sp:before { content: '\a' ; white-space: pre; }
-.slide h2 {font-size: 250%; line-height: 1.2em;}
 .sections {color: #888888;}
 .current-section {color: #000;}
 </style>
@@ -46,114 +41,53 @@
 <div class="layout">
   <div id="controls"><!-- DO NOT EDIT --></div>
   <div id="currentSlide"><!-- DO NOT EDIT --></div>
-  <div id="header">
-  </div>
   <div id="footer">
-    <h1>Location best practices</h1>
-    <h2>Brightkite</h2>
   </div>
 </div>
 
 <ol class="presentation xoxo">
 	<li class="slide">
-    <h1>Location-base applications:<br/>Best practices</h1>
+    <img src="logo.png"/>
+    <h1>Location-based applications:<br/>Best practices</h1>
     <h2>Peter Williams</h2>
     <h4><a href="http://brightkite.com/people/pezra">@pezra</a></h4>
   </li>
 
   <li class="slide">
-    <h2>
-      <ul class="sections">
-        <li class="section current-section">location != place</li>
-        <li>easy placement</li>
-        <li>privacy</li>
-      </ul>
-    </h2>
+    <h1>place > location</h1>
+    a place is locations with some context
   </li>
 
 	<li class="slide">
-    <h2 class="sp">people get places</h2>
-  </li>
-  
-	<li class="slide">
-    <h2>
-      <ul>
-        <li>home</li>
-        <li>Web Directions North 2009</li>
-        <li>Denver</li>
-      </ul>
-    </h2>
-  </li>
-
-	<li class="slide">
-    <h2 class="sp">not location</h2>
+    <h1>place vs location</h1>
+    39.709,-105.073<br/>
+    <span style="padding-left: 2em; font-size: smaller">vs</span><br/>
+    The Celtic Tavern
   </li>
 
   <li class="slide">
-    <h2 class="sp">do i care about 39.709,-105.073?</h2>
+    <h1>place is hard</h1>
+    multiple places at same location
+    <table><tr>
+    <td><img width="400" src="bk-wdn.png"/></td><td><img width="400" src="bk-grand-hyatt.png"/></td>
+    </tr></table>
   </li>
 
   <li class="slide">
-    <h2 class="sp">places have names</h2>
-  </li>
-
-	<li class="slide">
-    <h2 class="sp">Dazbog Coffee<br/>1099 18th St</h2>
-  </li>
-
-	<li class="slide">
-    <h2 class="sp">Anadarko Petroleum<br/>1099 18th St</h2>
-  </li>
-
-	<li class="slide">
-    <h2 class="sp">same lat/long (location)</h2>
-  </li>
-
-	<li class="slide">
-    <h2 class="sp"><strong>different</strong> places</h2>
-  </li>
-
-	<li class="slide">
-    <h2 class="sp">places overlap (and have extents)</h2>
-  </li>  
-
-	<li class="slide">
-    <h2 class="sp">brightkite hq</h2>
-  </li>
-
-	<li class="slide">
-    <h2 class="sp">is in Denver</h2>
-  </li>
-
-	<li class="slide">
-    <h2 class="sp">which is in Colorado</h2>
+    <h1>place is hard</h1>
+    places contain other places
+    <table><tr>
+    <td><img width="400" src="contained-place.png"/></td><td><img width="400" src="container-place.png"/></td>
+    </tr></table>
   </li>
 
   <li class="slide">
-    <h2 class="sp">places are fuzzy</h2>
+    <h1>place is hard</h1>
+    places contain other places
+    <table><tr>
+    <td><img width="400" src="contained-place.png"/></td><td><img width="400" src="container-place.png"/></td>
+    </tr></table>
   </li>
-
-	<li class="slide">
-    <h2 class="sp">where is Denver?</h2>
-  </li>
-
-	<li class="slide">
-    <h2 class="sp">"I know it when I see it"</h2>
-  </li>
-
-  <li class="slide">
-    <h2 class="sp">changes over time</h2>
-  </li>
-
-  <li class="slide">
-    <h2 class="sp">place is harder than location</h2>
-  </li>
-
-  <li class="slide">
-    <h2 class="sp">but way more useful</h2>
-  </li>
-
-
 
 
 
@@ -162,7 +96,7 @@
       <ul class="sections">
         <li>location != place</li>
         <li class="current-section">easy placement</li>
-        <li>privacy!</li>
+        <li>privacy</li>
       </ul>
     </h2>
   </li>
@@ -282,7 +216,7 @@
       <ul class="sections">
         <li>location != place</li>
         <li>easy placement</li>
-        <li class="current-section">privacy!</li>
+        <li class="current-section">privacy</li>
       </ul>
     </h2>
   </li>
