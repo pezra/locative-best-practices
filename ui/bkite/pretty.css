@@ -23,15 +23,15 @@ sup {font-size: smaller; line-height: 1px;}
 .slide code.old {color: silver;}
 .slide pre {padding: 0; margin: 0.25em 0 0.5em 0.5em; color: #533; font-size: 90%;}
 .slide pre code {display: block;}
-.slide ul {margin-left: 1%; margin-right: 5%; list-style: disc;}
+.slide ul {margin-left: 1%; margin-right: 5%; list-style: none;}
 .slide li {margin-top: 0.75em; margin-right: 0;}
 .slide ul ul {line-height: 1;}
 .slide ul ul li {margin: .2em; font-size: 85%; list-style: square;}
 .slide img.leader {display: block; margin: 0 auto;}
-.slide {font-size: 200%;}
+.slide {font-size: 200%; }
 
 div#header, div#footer {background: #dddef1; color: #AAB;
-  font-family: Verdana, Helvetica, sans-serif;}
+  font-family: sans-serif;}
 div#header {background: #dddef1; line-height: 1px;}
 div#footer {font-size: 0.5em; font-weight: bold; padding: 1em 0;}
 #footer h1, #footer h2 {display: block; padding: 0 1em;}
@@ -40,14 +40,15 @@ div#footer {font-size: 0.5em; font-weight: bold; padding: 1em 0;}
 div.long {font-size: 0.75em;}
 .slide h1 {position: absolute; top: 0.3em; z-index: 1;
   margin: 0; padding: 0 0 0 1en; white-space: nowrap;
-  font: bold 150%/1em Helvetica, sans-serif; text-transform: capitalize;
+  font: bold 150%/1em sans-serif; text-transform: capitalize;
   }
+.slide h2, .slide h3, .slide h4 { color: #336699; }
 .slide h3 {font-size: 130%;}
 h1 abbr {font-variant: small-caps;}
 
 div#controls {position: absolute; left: 50%; bottom: 0;
   width: 50%;
-  text-align: right; font: bold 0.9em Verdana, Helvetica, sans-serif;}
+  text-align: right; font: bold 0.9em sans-serif;}
 html>body div#controls {position: fixed; padding: 0 0 1em 0;
   top: auto;}
 div#controls form {position: absolute; bottom: 0; right: 0; width: 100%;
@@ -64,7 +65,7 @@ div#controls form {position: absolute; bottom: 0; right: 0; width: 100%;
 #slide0 h1 {position: static; margin: 1em 0 0; padding: 0;
    font: bold 2em Helvetica, sans-serif; white-space: normal;
    background: transparent;}
-#slide0 h2 {font: bold italic 1em Helvetica, sans-serif; margin: 0.25em;}
+#slide0 h2 {font: bold italic 1em sans-serif; margin: 0.25em;}
 #slide0 h3 {margin-top: 1.5em; font-size: 1.5em;}
 #slide0 h4 {margin-top: 0; font-size: 1em;}
 

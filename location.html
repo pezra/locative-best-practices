@@ -29,10 +29,12 @@
 <script src="ui/bkite/slides.js" type="text/javascript"></script>
 <!-- embedded styles -->
 <style type="text/css" media="all">
-.sp {text-align: center; font-size: 300%; }
+.sp {text-align: center; }
 .sp:before { content: '\a' ; white-space: pre; }
 .sections {color: #888888;}
-.current-section {color: #000;}
+.current-section { color: #000; }
+img.centered { display: block; margin-left: auto; margin-right: auto; }
+.centered { text-align: center; }
 </style>
 
 </head>
@@ -54,241 +56,99 @@
   </li>
 
   <li class="slide">
+    <h1>search</h1>
+    <p>
+    <img src="search-results.png"/>
+    </p>
+  </li>
+
+  <li class="slide">
+    <h1>javascript APIs</h1>
+    <h2>Loki, W3C Geolocation API</h2>
+    <br/>
+    <p class="centered">these work well when available</p>
+  </li>
+
+  <li class="slide">
+    <h1>location brokers</h1>
+    <h2>Xtify, Fire Eagle</h2>
+    <br/>
+    <p class="centered"></p>
+  </li>
+
+  <li class="slide">
+    <h1>device specific API</h1>
+    <p>
+    <ul>
+      <li>good user experience</li>
+      <li>point solutions</li>
+    </ul>
+    </p>
+  </li>
+
+  <li class="slide">
     <h1>place > location</h1>
-    a place is locations with some context
+    <p class="sp">give locations some context</p>
   </li>
 
 	<li class="slide">
     <h1>place vs location</h1>
-    39.709,-105.073<br/>
-    <span style="padding-left: 2em; font-size: smaller">vs</span><br/>
-    The Celtic Tavern
+    <br/>
+    <p class="centered">
+    The Celtic Tavern<br/>
+    <span style="font-size: smaller">vs</span><br/>
+    39.709,-105.073
+    </p>
   </li>
 
   <li class="slide">
-    <h1>place is hard</h1>
-    multiple places at same location
-    <table><tr>
-    <td><img width="400" src="bk-wdn.png"/></td><td><img width="400" src="bk-grand-hyatt.png"/></td>
+    <h1>containership</h1>
+    <table style="float: right;"><tr>
+    <td><img width="500" src="container-place.png"/></td></tr>
+    <tr><td><img width="500" src="contained-place.png"/></td>
     </tr></table>
+    <br/>
+    <h2>places are hierarchical</h2>
   </li>
 
   <li class="slide">
-    <h1>place is hard</h1>
-    places contain other places
-    <table><tr>
-    <td><img width="400" src="contained-place.png"/></td><td><img width="400" src="container-place.png"/></td>
-    </tr></table>
+    <h1>place snapping</h1>
+    <p>location is <strong>never</strong> known with perfect precision</p>
+    
+    <img class="centered" src="iphone-accuracy.png"/>
   </li>
 
-  <li class="slide">
-    <h1>place is hard</h1>
-    places contain other places
-    <table><tr>
-    <td><img width="400" src="contained-place.png"/></td><td><img width="400" src="container-place.png"/></td>
-    </tr></table>
-  </li>
+  <li class="slide"> 
+    <h1>place snapping</h1>
 
-
-
-  <li class="slide">
-    <h2>
-      <ul class="sections">
-        <li>location != place</li>
-        <li class="current-section">easy placement</li>
-        <li>privacy</li>
-      </ul>
-    </h2>
-  </li>
-
-  <li class="slide">
-    <h2 class="sp">search</h2>
-  </li>
-
-  <li class="slide">
-    <h2 class="sp">"the celtic denver"</h2>
-  </li>
-
-  <li class="slide">
-    <h2 class="sp">like geocoding, only smarter</h2>
-  </li>
-
-  <li class="slide">
-    <h2 class="sp">make the heavy lifting someone else's problem</h2>
-  </li>
-  
-  <li class="slide">
-    <h2 class="sp">place names for free</h2>
-  </li>
-
-  <li class="slide">
-    <h2 class="sp">manual process</h2>
-  </li>
-
-  <li class="slide">
-    <h2 class="sp">location aware devices</h2>
-  </li>
-
-  <li class="slide">
-    <h2 class="sp">browsers have the <a href="http://dev.w3.org/geo/api/spec-source.html">Geolocation API</a></h2>
-  </li>
-
-  <li class="slide">
-    <h2 class="sp">and <a href="http://www.loki.com/">Loki</a></h2>
-  </li>
-
-  <li class="slide">
-    <h2 class="sp">except for mobile browsers</h2>
-  </li>
-
-  <li class="slide">
-    <h2 class="sp">location aware devices</h2>
-    <h3>
-      <ul>
-        <li>smart phones</li>
-        <li>GPS devices</li>
-      </ul>
-    </h3>
-  </li>
-
-  <li class="slide">
-    <h2 class="sp">incompatible APIs</h2>
-  </li>
-
-  <li class="slide">
-    <h2 class="sp">lower user effort</h2>
-  </li>
-
-  <li class="slide">
-    <h2 class="sp">reverse geocoding</h2>
-  </li>
-
-	<li class="slide">
-    <h2 class="sp">sux</h2>
-  </li>
-
-  <li class="slide">
-    <h2>Denver, CO</h2>
-    <h3>
+    <br/>
     <ul>
-      <li>Google:   39.755,-104.988</li>
-      <li>Yahoo!:   39.740,-104.992</li>
-      <li>Geonames: 39.755,-104.988</li>
+      <li>location + accuracy &#x2192; some places you might be</li>
+      <li>people are predictable</li>      
     </ul>
-    </h3>
-  </li>
-  
-  <li class="slide">
-    <h2 class="sp">don't forget: places change over time</h2>
-  </li>  
-
-  <li class="slide">
-    <h2 class="sp">detected location is inaccurate</h2>
   </li>
 
   <li class="slide">
-    <h2 class="sp">places overlap</h2>
+    <h1>Privacy</h1>
+    <h2>location is sensitive</h2>
+    <br/><br/>
+    <img class="centered" src="privacy-config.png"/>
   </li>
 
   <li class="slide">
-    <h2 class="sp">fortunately, people are predictable</h2>
-  </li>
-
-  <li class="slide">
-    <h2 class="sp">prefer places the user has been before</h2>
-  </li>
-
-  <li class="slide">
-    <h2 class="sp">prefer places lots of other people go</h2>
-  </li>
-
-  <li class="slide">
-    <h2 class="sp">people are social</h2>
-  </li>
-
-  <li class="slide">
-    <h2 class="sp">let them "join" others</h2>
+    <h1>risk tolerance</h1>
+    <p class="centered">privacy needs vary on activity and location</p>
+    <img class="centered" src="place-privacy.png"/>
   </li>
 
 
   <li class="slide">
-    <h2>
-      <ul class="sections">
-        <li>location != place</li>
-        <li>easy placement</li>
-        <li class="current-section">privacy</li>
-      </ul>
-    </h2>
+    <h1>Brightkite API <img style="margin-left: 1em;" src="bg_home_api.png"/></h1>
+    <h2>All that and more</h2>
+    <br/><br/>
+    <p style="font-size: 60%">http://groups.google.com/group/brightkite-api</p>
   </li>
 
-  <li class="slide">
-    <h2 class="sp">location is sensitive</h2>
-  </li>
-
-  <li class="slide">
-    <h2 class="sp">it's all about trust</h2>
-  </li>
-
-  <li class="slide">
-    <h2 class="sp">and risk tolerance</h2>
-  </li>
-
-  <li class="slide">
-    <h2 class="sp">assume a lack of trusted</h2>
-  </li>
-
-  <li class="slide">
-    <h2 class="sp">unless told otherwise</h2>
-  </li>
-
-  <li class="slide">
-    <h2 class="sp">my exact location is public</h2>
-  </li>
-
-  <li class="slide">
-    <h2 class="sp">my wife's is not</h2>
-  </li>
-
-  <li class="slide">
-    <h2 class="sp">my home address is off limits</h2>
-  </li>
-
-  <li class="slide">
-    <h2 class="sp">my home city is not</h2>
-  </li>
-
-  <li class="slide">
-    <h2 class="sp">i live in Broomfield, btw</h2>
-  </li>
-
-  <li class="slide">
-    <h2 class="sp">precise locations when there is trust</h2>
-  </li>
-
-  <li class="slide">
-    <h2 class="sp">otherwise imprecise, but accurate, locations</h2>
-  </li>
-
-  <li class="slide">
-    <h2 class="sp">ambiguity is a feature</h2>
-  </li>
-
-  <li class="slide">
-    <h2 class="sp">allow deceit</h2>
-  </li>
-
-  <li class="slide">
-    <h2 class="sp">sometimes even people i trust shouldn't know i am at Tiffany & Co</h2>
-  </li>
-
-  <li class="slide">
-    <h2 class="sp">but don't encourage it</h2>
-  </li>
-
-  <li class="slide">
-    <h2 class="sp">Questions?</h2>
-  </li>
-  
 </ol>
 </body>
 </html>
